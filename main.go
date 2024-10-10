@@ -10,13 +10,12 @@ import (
 )
 
 func main() {
-	log.SetFlags(log.Ldate|log.Lshortfile)
-	mytheme.InitFont(mytheme.STKAITI)		// 设置中文字体
+	log.SetFlags(log.Ldate | log.Lshortfile)
 	myApp := app.New()
 	myWindow := myApp.NewWindow("坦克大战")
 	myWindow.CenterOnScreen()
 	myWindow.SetMaster()
-	myApp.Settings().SetTheme(mytheme.NewMyTheme(color.NRGBA{R: 0xd3, G: 0xd3, B: 0xd3, A: 0xff}, nil))		// 设置背景为浅灰色
+	myApp.Settings().SetTheme(mytheme.NewMyTheme(color.NRGBA{R: 0xd3, G: 0xd3, B: 0xd3, A: 0xff}, nil)) // 设置背景为浅灰色
 
 	// 初始化game
 	game := pkg.InitGame()
