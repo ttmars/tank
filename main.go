@@ -3,10 +3,10 @@ package main
 import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
-	"gitee.com/ttmasx/cob/mytheme"
 	"image/color"
 	"log"
 	"tank/pkg"
+	"tank/pkg/mytheme"
 )
 
 func main() {

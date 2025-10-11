@@ -1,0 +1,6 @@
+package mytheme
+
+import "image/color"
+
+var Red = color.NRGBA{R: 0xff, G: 0x33, B: 0x33, A: 0xff}
+var Gray = color.NRGBA{R: 0x51, G: 0x51, B: 0x51, A: 0x51}
